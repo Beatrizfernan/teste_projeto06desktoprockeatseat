@@ -1,0 +1,172 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.page {
+    display: flex;
+    width: 1279.5px;
+    height: 720px;
+}
+
+header {
+    background: #8E9AAF;
+    width: 377px;
+    height: 720px;
+}
+
+main {
+    display: grid;
+    gap: 32px;
+    margin-top: 64px;
+    margin-left: 98px;
+}
+
+.cards {
+    position: relative;
+
+
+}
+
+
+
+.card img {
+
+    object-fit: cover;
+
+
+}
+
+
+main div:nth-child(5) img {
+    margin-top: -125px;
+}
+
+@media (min-width:700px) {
+
+
+
+    main {
+        grid-template-columns: 1fr 1fr 1fr;
+
+    }
+
+}
+
+
+
+@media (min-width:930px) {
+
+    main {
+        grid-template-areas: "colA colB colC"
+            " colD colE colF"
+
+        ;
+
+    }
+
+
+
+
+    main div:nth-child(1) {
+        grid-area: colA;
+
+
+    }
+
+    main div:nth-child(2) {
+        grid-area: colB;
+
+    }
+
+    main div:nth-child(3) {
+        grid-area: colC;
+
+    }
+
+    main div:nth-child(4) {
+        grid-area: colD;
+        margin-top: -325px;
+    }
+
+    main div:nth-child(5) {
+        grid-area: colE;
+
+
+    }
+
+    main div:nth-child(6) {
+        grid-area: colF;
+        margin-top: -325px;
+    }
+
+
+
+
+}
+
+footer {
+    margin-left: 720px;
+    margin-top: -50px;
+    width: 592px;
+    height: 28px;
+
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 28px;
+    color: #4A4E69;
+
+
+}
+
+footer a {
+
+    color: #4A4E69;
+    font-style: bold;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 28px;
+    text-decoration: none;
+}
+
+header h1 {
+    font-family: 'Staatliches';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 34px;
+
+    color: #FFFFFF;
+    background: #CBC0D3;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    padding: 20px 71px;
+    margin-bottom: 32px;
+
+}
+
+header p {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding: 32px 48px 100px 54px;
+
+}
+
+header img {
+    margin-left: 81px;
+    margin-top: 32px;
+    margin-bottom: 32px;
+}
